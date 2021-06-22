@@ -1,4 +1,5 @@
 @import 'responsive.css';
+@import 'list.css';
 
 @font-face {
     font-family: 'Inconsolata', monospace;
@@ -30,7 +31,7 @@ a {
 }
 
 .container {
-    padding: 0 50px;
+    padding: 0 139px;
 }
 
 .main {
@@ -97,4 +98,3 @@ a {
     color: #F9B54C;
     box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.479);
 }
-

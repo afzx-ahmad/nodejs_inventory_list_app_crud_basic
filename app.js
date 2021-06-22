@@ -8,4 +8,8 @@ app.get('/', (req, res) => {
     res.render('index.ejs');
 });
 
+app.get('/list', (req, res) => {
+    res.render('list.ejs');
+});
+
 app.listen(3000);
