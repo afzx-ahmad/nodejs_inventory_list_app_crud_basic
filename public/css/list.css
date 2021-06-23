@@ -5,7 +5,9 @@
 header {
     height: 80px;
     background-color: #3B8AC3;
-    position: fixed;
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
     width: 100%;
 }
 
@@ -21,7 +23,7 @@ header h2 {
 }
 
 #list_page .main {
-    padding-top: 125px;
+    padding-top: 50px;
     flex-direction: column;
 }
 
@@ -34,15 +36,15 @@ header h2 {
 }
 
 #list_page .main table {
-    width: 800px;
+    width: 100%;
     border: 1px solid black;
+    border-collapse: collapse;
 }
 
 #list_page .main thead {
     background-color: #F9B54C;
     height: 45px;
     font-size: 1.5rem;
-    border-bottom: 2px solid black !important;
 }
 
 #list_page .main tbody {
@@ -51,7 +53,16 @@ header h2 {
     text-align: center;
 }
 
-#list_page .main tbody tr{
-   font-size: 1.5rem;
-   height: 40px;
+#list_page .main tbody tr {
+    font-size: 1.5rem;
+    height: 43px;
+}
+
+#list_page .main tbody tr:nth-child(odd) {
+    background-color: rgb(216, 216, 216);
+}
+
+#list_page #action_column {
+    text-align: right;
+    width: 80px;
 }

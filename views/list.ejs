@@ -8,13 +8,13 @@
         <title>Inventory List</title>
         <link rel="icon" href="/image/Logo.jpg">
         <link rel="stylesheet" href="/css/style.css">
+        <link rel="stylesheet" href="stylesheets/fontawesome/css/all.min.css">
     </head>
     <body id="list_page">
         <header>
             <div class="container">
-                <img src="/image/Logo.jpg" alt="Logo" width="52px">
-                <h2>INVENTORY</h2>
-
+                <a href="/"><img src="/image/Logo.jpg" alt="Logo" width="52px"></a>
+                <h2><a href="/">INVENTORY</a></h2>
             </div>
 
         </header>
@@ -29,19 +29,21 @@
                             <th>ID</th>
                             <th>Nama</th>
                             <th>Jumlah</th>
+                            <th></th>
                         </tr>
                     </thead>
                     <tbody>
+                        <% items.forEach((item) => {%>
                         <tr>
-                            <td>1</td>
-                            <td>Meja</td>
-                            <td>3</td>
+                            <td><%= item.id %></td>
+                            <td><%= item.name %></td>
+                            <td><%= item.amount %></td>
+                            <td id="action_column">
+                                <p><i class="far fa-edit"></i>Edit</p>
+                                <p><i class="far fa-trash-alt"></i>Hapus</p>
+                            <td>
                         </tr>
-                        <tr>
-                            <td>2</td>
-                            <td>Kursi</td>
-                            <td>12</td>
-                        </tr>
+                        <% }); %>
                     </tbody>
                 </table>
             </div>

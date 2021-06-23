@@ -89,7 +89,7 @@ a {
     border: 5px solid white;
     border-radius: 10px;
     padding: 16px 0;
-    box-shadow: 0 10px 5px rgba(0, 0, 0, 0.479);
+    box-shadow: 0 10px rgba(0, 0, 0, 0.479);
 }
 
 .main .right_side a:hover {

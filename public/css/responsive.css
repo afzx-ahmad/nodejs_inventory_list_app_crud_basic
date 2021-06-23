@@ -12,8 +12,13 @@
     :root {
         font-size: 12px !important;
     }
+
     .container {
         padding: 15px 65px 0 !important;
+    }
+
+    #list_page .container {
+        padding: 0 65px 0 !important;
     }
 
     .main {
@@ -55,4 +60,30 @@
         width: 130px !important;
         padding: 10px 0 !important;
     }
+
+    header {
+        text-align: center !important;
+    }
+
+    header img {
+        padding-top: 0 !important;
+        width: 30px !important;
+    }
+
+    header h2 {
+        display: block !important;
+        margin: 0 auto !important;
+        left: 0;
+        right: 0;
+    }
+
+    #list_page .container {
+        width: 100%;
+        padding: 10px 30px 0 !important;
+    }
+
+    #list_page .main {
+        padding-top: 30px !important;
+    }
+    
 }
