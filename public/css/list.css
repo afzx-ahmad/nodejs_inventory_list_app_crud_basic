@@ -64,5 +64,26 @@ header h2 {
 
 #list_page #action_column {
     text-align: right;
-    width: 80px;
+    width: 30%;
+    padding-right: 1.5rem;
 }
+
+#list_page #action_column a {
+    font-size: 1rem;
+    padding: 0.5rem 0.7rem;
+    margin: 0 0.3rem;
+    background-color: #3B8AC3;
+    border-radius: 15px;
+    border-width: 1px;
+    color: white;
+}
+
+#list_page #action_column a:nth-last-child(1) {
+    background-color: #d82c2c;
+}
+
+#list_page #action_column i {
+    display: inline;
+    margin-right: 0.3rem;
+}
+
