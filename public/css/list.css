@@ -55,7 +55,7 @@ header h2 {
 
 #list_page .main tbody tr {
     font-size: 1.5rem;
-    height: 43px;
+    height: 50px;
 }
 
 #list_page .main tbody tr:nth-child(odd) {
@@ -64,5 +64,25 @@ header h2 {
 
 #list_page #action_column {
     text-align: right;
-    width: 80px;
+    width: 30%;
+    padding-right: 1.5rem;
+}
+
+#list_page #action_column a {
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    margin: 0 0.3rem;
+    background-color: #F9B54C;
+    border-radius: 15px;
+    border-width: 1px;
+    color: white;
+}
+
+#list_page #action_column a:nth-last-child(1) {
+    background-color: #d82c2c;
+}
+
+#list_page #action_column i {
+    display: inline;
+    margin-right: 0.3rem;
 }
