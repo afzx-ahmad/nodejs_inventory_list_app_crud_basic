@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="afzx.ahmad">
+        <title>Inventory List</title>
+        <link rel="icon" href="/image/Logo.jpg">
+        <link rel="stylesheet" href="/css/style.css">
+        <link rel="stylesheet" href="stylesheets/fontawesome/css/all.min.css">
+    </head>
+    <body id="list_page">
+        <header>
+            <div class="container">
+                <a href="/"><img src="/image/Logo.jpg" alt="Logo" width="52px"></a>
+                <h2><a href="/">INVENTORY</a></h2>
+            </div>
+
+        </header>
+        
+        <div class="container">
+            <div class="main">
+                <a href="/add">Tambahkan</a>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <th>No</th>
+                            <th>ID</th>
+                            <th>Nama</th>
+                            <th>Jumlah</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <% let i = 1;
+                            items.forEach((item) => {%>
+                        <tr>
+                            <td><%= i %></td>
+                            <td><%= item.id %></td>
+                            <td><%= item.name %></td>
+                            <td><%= item.amount %></td>
+                            <td id="action_column">
+                                <a href="#"><i class="far fa-edit"></i>Edit</a>
+                                <form action="/delete/<%= item.id %>" method="POST">
+                                    <button type="submit" onclick="return confirmation()">
+                                        <i class="far fa-trash-alt"></i>Hapus
+                                    </button>
+                                </form>
+                            <td>
+                        </tr>
+                        <% i += 1;
+                            }); %>
+                    </tbody>
+                </table>
+            </div>
+
+        </div>
+        <script>
+            function confirmation() {
+                let a = confirm('Apakah anda yakin ingin menghapus data ini ?');
+                if(!a){
+                    return false;
+                }
+                return true;
+            }
+        </script>
+    </body>
+</html>
