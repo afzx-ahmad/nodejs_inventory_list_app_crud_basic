@@ -78,17 +78,7 @@ header h2 {
     color: white;
 }
 
-#list_page #action_column form {
-    display: inline;
-}
-
-#list_page #action_column button {
-    font-size: 1rem;
-    padding: 0.5rem 0.7rem;
-    margin: 0 0.3rem;
-    border-radius: 15px;
-    border-width: 1px;
-    color: white;
+#list_page #action_column a:nth-last-child(1) {
     background-color: #d82c2c;
 }
 

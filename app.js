@@ -16,8 +16,6 @@ const app = express();
 app.use(express.static('public'));
 app.use('/stylesheets/fontawesome', express.static(__dirname + '/node_modules/@fortawesome/fontawesome-free/'));
 
-app.use(express.urlencoded({extended: false}));
-
 app.get('/', (req, res) => {
     res.render('index.ejs');
 });
@@ -27,16 +25,6 @@ app.get('/list', (req, res) => {
         // console.log(results);
         res.render('list.ejs', {items: results});
     });
-});
-
-app.post('/delete/:id', (req, res) => {
-    connection.query(
-        'DELETE FROM items WHERE id = ?',
-        [req.params.id],
-        (err, results) => {
-            res.redirect('/list');
-        }
-    );
 });
 
 app.listen(3000);
