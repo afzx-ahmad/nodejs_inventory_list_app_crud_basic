@@ -1,0 +1,98 @@
+#list_page {
+    background-color: #CFDBE6 !important;
+}
+
+header {
+    height: 80px;
+    background-color: #3B8AC3;
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+    width: 100%;
+}
+
+header img {
+    padding-top: 14px;
+}
+
+header h2 {
+    display: inline-block;
+    position: absolute;
+    margin-top: 28px;
+    margin-left: 20px;
+}
+
+#list_page .main {
+    padding-top: 50px;
+    flex-direction: column;
+}
+
+#list_page .main a {
+    background-color: #F9B54C;
+    padding: 10px 30px;
+    border-radius: 15px;
+    border: 2px solid black;
+    margin-bottom: 20px;
+}
+
+#list_page .main table {
+    width: 100%;
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+#list_page .main thead {
+    background-color: #F9B54C;
+    height: 45px;
+    font-size: 1.5rem;
+}
+
+#list_page .main tbody {
+    background-color: white;
+    color: black;
+    text-align: center;
+}
+
+#list_page .main tbody tr {
+    font-size: 1.5rem;
+    height: 50px;
+}
+
+#list_page .main tbody tr:nth-child(odd) {
+    background-color: rgb(216, 216, 216);
+}
+
+#list_page #action_column {
+    text-align: right;
+    width: 30%;
+    padding-right: 1.5rem;
+}
+
+#list_page #action_column a {
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    margin: 0 0.3rem;
+    background-color: #F9B54C;
+    border-radius: 15px;
+    border-width: 1px;
+    color: white;
+}
+
+#list_page #action_column form {
+    display: inline;
+}
+
+#list_page #action_column button {
+    font-size: 1rem;
+    padding: 0.5rem 0.7rem;
+    margin: 0 0.3rem;
+    border-radius: 15px;
+    border-width: 1px;
+    color: white;
+    background-color: #d82c2c;
+}
+
+#list_page #action_column i {
+    display: inline;
+    margin-right: 0.3rem;
+}
