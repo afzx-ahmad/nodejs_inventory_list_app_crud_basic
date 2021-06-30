@@ -99,3 +99,29 @@ a {
     color: #F9B54C;
     box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.479);
 }
+
+#list_page .main a:hover, #list_page #action_column a:hover, #list_page #action_column button:hover {
+    transition: all 0.3s ease;
+    border: 2px solid white;
+    color: black;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.479);
+}
+
+#list_page .main table tbody tr:hover {
+    transition: all 0.3s ease;
+    border-bottom: 2px solid black;
+}
+
+#add_page .main form .button_wrap input#create_button:hover {
+    transition: all 0.3s ease;
+    border: 2px solid white;
+    color: black !important;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.6) !important;
+}
+
+#add_page .main form .button_wrap a:hover {
+    transition: all 0.3s ease;
+    border: 2px solid white;
+    color: black !important;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.6) !important;
+}

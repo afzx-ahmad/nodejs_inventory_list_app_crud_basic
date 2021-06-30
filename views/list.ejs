@@ -22,38 +22,42 @@
         <div class="container">
             <div class="main">
                 <a href="/add">Tambahkan</a>
+                
+                <div class="table_wrap">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>#</th>
+                                <th>ID</th>
+                                <th>Nama</th>
+                                <th>Jumlah</th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <% let i = 1;
+                                items.forEach((item) => {%>
+                            <tr>
+                                <td><%= i %></td>
+                                <td><%= item.id %></td>
+                                <td><%= item.name %></td>
+                                <td><%= item.amount %></td>
+                                <td id="action_column">
+                                    <a href="#"><i class="far fa-edit"></i>Edit</a>
+                                    <form action="/delete/<%= item.id %>" method="POST">
+                                        <button type="submit" onclick="return confirmation()">
+                                            <i class="far fa-trash-alt"></i>Hapus
+                                        </button>
+                                    </form>
+                                <td>
+                            </tr>
+                            <% i += 1;
+                                }); %>
+                        </tbody>
+                    </table>
+                
+                </div>
 
-                <table>
-                    <thead>
-                        <tr>
-                            <th>No</th>
-                            <th>ID</th>
-                            <th>Nama</th>
-                            <th>Jumlah</th>
-                            <th></th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <% let i = 1;
-                            items.forEach((item) => {%>
-                        <tr>
-                            <td><%= i %></td>
-                            <td><%= item.id %></td>
-                            <td><%= item.name %></td>
-                            <td><%= item.amount %></td>
-                            <td id="action_column">
-                                <a href="#"><i class="far fa-edit"></i>Edit</a>
-                                <form action="/delete/<%= item.id %>" method="POST">
-                                    <button type="submit" onclick="return confirmation()">
-                                        <i class="far fa-trash-alt"></i>Hapus
-                                    </button>
-                                </form>
-                            <td>
-                        </tr>
-                        <% i += 1;
-                            }); %>
-                    </tbody>
-                </table>
             </div>
 
         </div>

@@ -3,6 +3,7 @@
 }
 
 #list_page header {
+    font-family:'Inconsolata', monospace !important;
     height: 80px;
     background-color: #3B8AC3;
     position: -webkit-sticky; /* Safari */
@@ -23,6 +24,7 @@
 }
 
 #list_page .main {
+    font-family: 'Lemonada', cursive !important;
     padding-top: 50px;
     flex-direction: column;
 }
@@ -33,49 +35,71 @@
     border-radius: 15px;
     border: 2px solid black;
     margin-bottom: 20px;
+    font-family:'Inconsolata', monospace !important;
+    font-size: 1.5rem;
+}
+
+#list_page .main .table_wrap {
+    width: 100%;
 }
 
 #list_page .main table {
     width: 100%;
-    border: 1px solid black;
     border-collapse: collapse;
 }
 
-#list_page .main thead {
+#list_page table tr:last-child td:first-child {
+    border-bottom-left-radius: 10px !important;
+}
+
+#list_page table tr:last-child td#action_column {
+    border-bottom-right-radius: 10px !important;
+}
+
+#list_page table tr:first-child th:first-child {
+    border-top-left-radius: 10px !important;
+}
+
+#list_page table tr:first-child th:last-child {
+    border-top-right-radius: 10px !important;
+}
+
+#list_page .main table thead {
     background-color: #F9B54C;
     height: 45px;
     font-size: 1.5rem;
 }
 
-#list_page .main tbody {
+#list_page .main table tbody {
     background-color: white;
     color: black;
     text-align: center;
 }
 
-#list_page .main tbody tr {
+#list_page .main table tbody tr {
     font-size: 1.5rem;
     height: 50px;
 }
 
-#list_page .main tbody tr:nth-child(odd) {
+#list_page .main table tbody tr:nth-child(odd) {
     background-color: rgb(216, 216, 216);
 }
 
 #list_page #action_column {
     text-align: right;
-    width: 30%;
+    width: auto;
     padding-right: 1.5rem;
 }
 
 #list_page #action_column a {
     font-size: 1rem;
-    padding: 0.5rem 1rem;
+    padding: 0.5rem 0.7rem;
     margin: 0 0.3rem;
     background-color: #F9B54C;
     border-radius: 15px;
     border-width: 1px;
     color: white;
+    font-family:'Inconsolata', monospace !important;
 }
 
 #list_page #action_column form {
@@ -90,6 +114,7 @@
     border-width: 1px;
     color: white;
     background-color: #d82c2c;
+    font-family:'Inconsolata', monospace !important;
 }
 
 #list_page #action_column i {
