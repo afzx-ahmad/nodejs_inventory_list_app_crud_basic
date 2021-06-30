@@ -17,8 +17,12 @@
         padding: 15px 65px 0 !important;
     }
 
-    #list_page .container {
+    #list_page .container, #add_page .container {
         padding: 0 65px 0 !important;
+    }
+
+    #list_page .main table {
+        width: 638px !important;
     }
 
     .main {
@@ -44,7 +48,7 @@
 
 }
 
-@media screen and (max-width: 400px){
+@media screen and (min-width: 100px) and (max-width: 400px){
     :root {
         font-size: 12px !important;
     }
@@ -61,29 +65,81 @@
         padding: 10px 0 !important;
     }
 
-    header {
+    #list_page header {
         text-align: center !important;
     }
 
-    header img {
+    #list_page header img {
         padding-top: 0 !important;
         width: 30px !important;
     }
 
-    header h2 {
+    #list_page header h2 {
         display: block !important;
         margin: 0 auto !important;
         left: 0;
         right: 0;
     }
 
-    #list_page .container {
+    #list_page .container, #add_page .container {
         width: 100%;
-        padding: 10px 30px 0 !important;
+        padding: 10px 10px 0 !important;
     }
 
-    #list_page .main {
+    #list_page .main table {
+        width: 380px !important;
+    }
+
+    #list_page #action_column {
+        width: auto !important;
+    }
+
+    #list_page .main .table_wrap {
+        overflow-x: scroll;
+    }   
+
+    #list_page .main, #add_page .main {
         padding-top: 30px !important;
     }
+
+    #add_page header {
+        text-align: center !important;
+    }
+
+    #add_page header img {
+        padding-top: 0 !important;
+        width: 30px !important;
+    }
+
+    #add_page header h2 {
+        display: block !important;
+        margin: 0 auto !important;
+        left: 0;
+        right: 0;
+    }
+
+    #add_page .main form .button_wrap {
+        text-align: center;
+    }
     
+    #add_page .main form .button_wrap a {
+        display: block !important;
+        width: 100% !important;
+        margin-right: 0 !important;
+        padding: 0.4rem 1rem !important;
+    } 
+
+    #add_page .main form .button_wrap input#create_button {
+        display: block !important;
+        width: 100% !important;
+        margin-right: 0 !important;
+        margin-top: 1.5rem !important;
+        margin-bottom: 0.8rem !important;
+        padding: 0.2rem 1rem !important;
+    }
+
+    #add_page .main h3 {
+        text-align: center;
+    }
+
 }
