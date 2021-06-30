@@ -33,6 +33,17 @@ app.get('/add', (req, res) => {
     res.render('add.ejs');
 });
 
+app.post('/create', (req, res) => {
+    connection.query(
+        'INSERT INTO items (name, amount) VALUES (?, ?)', [req.body.nama_barang, req.body.jumlah],
+        (err, results) => {
+            console.log(req.body.nama_barang);
+            console.log(req.body.jumlah);
+            res.redirect('/list');
+        }
+    );
+});
+
 app.post('/delete/:id', (req, res) => {
     connection.query(
         'DELETE FROM items WHERE id = ?',
