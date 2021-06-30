@@ -1,0 +1,86 @@
+#add_page {
+    background-color: #CFDBE6 !important;
+}
+
+#add_page header {
+    height: 80px;
+    background-color: #3B8AC3;
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+    width: 100%;
+}
+
+#add_page header img {
+    padding-top: 14px;
+}
+
+#add_page header h2 {
+    display: inline-block;
+    position: absolute;
+    top: 28px;
+    margin-left: 20px;
+}
+
+#add_page .main {
+    padding-top: 50px !important;
+    flex-direction: column !important;
+    color: black !important;
+    font-family: 'Inconsolata', monospace !important;
+
+}
+
+#add_page .main h3 {
+    font-size: 1.8rem !important;
+}
+
+#add_page .main form {
+    margin-top: 0.6rem !important;
+    width: auto !important;
+    height: auto !important;
+    background-color: white !important;
+    padding: 2rem 3.5rem !important;
+    box-shadow: 3px 4px 5px rgba(14, 10, 10, 0.6) !important;
+
+}
+
+#add_page .main form label, #add_page .main form input {
+    display: block !important;
+    font-family: 'Lemonada', cursive !important;
+    font-size: 2rem !important;
+}
+
+#add_page .main form .button_wrap {
+    text-align: right;
+}
+
+#add_page .main form .button_wrap input#create_button {
+    display: inline-block !important;
+    width: auto !important;
+    font-size: 1.5rem !important;
+    margin-right: 2rem !important;
+    padding: 0.4rem 1rem !important;
+    background-color: #F9B54C !important;
+    border-radius: 15px !important;
+    border: 1px solid black;
+    color: white !important;
+    box-shadow: 2px 3px 2px rgba(0, 0, 0, 0.6) !important;
+}
+
+#add_page .main form .button_wrap a {
+    display: inline-block;
+    width: auto !important;
+    font-size: 1.5rem !important;
+    padding: 0.63rem 1rem !important;
+    background-color: #F94C4C !important;
+    border-radius: 15px !important;
+    border: 1px solid black;
+    color: white !important;
+    box-shadow: 2px 3px 2px rgba(0, 0, 0, 0.6) !important;
+}
+
+#add_page .main form input {
+    margin: 0.6rem 0 !important;
+    padding: 0 0.6rem !important;
+    width: 100%;
+}

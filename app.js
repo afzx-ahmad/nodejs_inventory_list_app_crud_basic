@@ -29,6 +29,10 @@ app.get('/list', (req, res) => {
     });
 });
 
+app.get('/add', (req, res) => {
+    res.render('add.ejs');
+});
+
 app.post('/delete/:id', (req, res) => {
     connection.query(
         'DELETE FROM items WHERE id = ?',

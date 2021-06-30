@@ -2,7 +2,7 @@
     background-color: #CFDBE6 !important;
 }
 
-header {
+#list_page header {
     height: 80px;
     background-color: #3B8AC3;
     position: -webkit-sticky; /* Safari */
@@ -11,11 +11,11 @@ header {
     width: 100%;
 }
 
-header img {
+#list_page header img {
     padding-top: 14px;
 }
 
-header h2 {
+#list_page header h2 {
     display: inline-block;
     position: absolute;
     margin-top: 28px;

@@ -17,7 +17,7 @@
         padding: 15px 65px 0 !important;
     }
 
-    #list_page .container {
+    #list_page .container, #add_page .container {
         padding: 0 65px 0 !important;
     }
 
@@ -77,13 +77,37 @@
         right: 0;
     }
 
-    #list_page .container {
+    #list_page .container, #add_page .container {
         width: 100%;
         padding: 10px 30px 0 !important;
     }
 
-    #list_page .main {
+    #list_page .main, #add_page .main {
         padding-top: 30px !important;
     }
+
+    #add_page .main form .button_wrap {
+        text-align: center;
+    }
     
+    #add_page .main form .button_wrap a {
+        display: block !important;
+        width: 100% !important;
+        margin-right: 0 !important;
+        padding: 0.4rem 1rem !important;
+    } 
+
+    #add_page .main form .button_wrap input#create_button {
+        display: block !important;
+        width: 100% !important;
+        margin-right: 0 !important;
+        margin-top: 1.5rem !important;
+        margin-bottom: 0.8rem !important;
+        padding: 0.2rem 1rem !important;
+    }
+
+    #add_page .main h3 {
+        text-align: center;
+    }
+
 }

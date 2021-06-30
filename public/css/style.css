@@ -1,5 +1,6 @@
-@import 'responsive.css';
 @import 'list.css';
+@import 'add.css';
+@import 'responsive.css';
 
 @font-face {
     font-family: 'Inconsolata', monospace;
